@@ -1,0 +1,49 @@
+{
+  "id": "backend-tag-flow",
+  "createdAt": "2026-04-24T16:16:00.000Z",
+  "repoRef": {
+    "name": "backend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Tags API (Backend)",
+      "description": "Express → tag controller → service → Prisma for the tag list.",
+      "nodeRefs": [
+        {
+          "id": "backend-api-router",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-tag-controller",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-tag-service",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-prisma-client",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-tag-model",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-046",
+        "edge-047",
+        "edge-048",
+        "edge-049"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

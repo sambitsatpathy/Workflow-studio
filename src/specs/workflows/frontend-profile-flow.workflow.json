@@ -1,0 +1,46 @@
+{
+  "id": "frontend-profile-flow",
+  "createdAt": "2026-04-24T12:16:00.000Z",
+  "repoRef": {
+    "name": "frontend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Profiles (Frontend)",
+      "description": "Profile view reads a profile and toggles the follow relationship via the API agent.",
+      "nodeRefs": [
+        {
+          "id": "frontend-app-shell",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-profile",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-api-agent",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-common-store",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-024",
+        "edge-025",
+        "edge-026",
+        "edge-027",
+        "edge-028"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

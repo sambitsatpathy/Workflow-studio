@@ -1,0 +1,201 @@
+{
+  "app": "Conduit (RealWorld)",
+  "specVersion": "1.0.0",
+  "description": "RealWorld \"Conduit\" — a Medium-style social blogging platform, extracted from its React frontend and Express/Prisma backend.",
+  "createdAt": "2026-04-23T05:16:00.000Z",
+  "updatedAt": "2026-04-24T17:16:00.000Z",
+  "repos": [
+    {
+      "name": "frontend",
+      "layer": "ui"
+    },
+    {
+      "name": "backend",
+      "layer": "backend"
+    }
+  ],
+  "workflows": [
+    {
+      "ref": "workflows/backend-article-flow",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "workflows/backend-auth-flow",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "workflows/backend-profile-flow",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "workflows/backend-tag-flow",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "workflows/frontend-article-flow",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "workflows/frontend-auth-flow",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "workflows/frontend-profile-flow",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    }
+  ],
+  "nodes": [
+    {
+      "ref": "nodes/backend-api-router",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-article-controller",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-article-model",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-article-service",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-auth-controller",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-auth-middleware",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-auth-service",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-comment-model",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-express-app",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-prisma-client",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-profile-controller",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-profile-service",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-tag-controller",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-tag-model",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-tag-service",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/backend-user-model",
+      "version": "1.0.0",
+      "repoRef": "backend"
+    },
+    {
+      "ref": "nodes/frontend-api-agent",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-app-shell",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-article-store",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-article",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-auth-store",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-common-store",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-editor",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-home",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-login",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-profile",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-redux-middleware",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-register",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    },
+    {
+      "ref": "nodes/frontend-settings",
+      "version": "1.0.0",
+      "repoRef": "frontend"
+    }
+  ]
+}

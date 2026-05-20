@@ -1,0 +1,64 @@
+{
+  "id": "frontend-article-flow",
+  "createdAt": "2026-04-24T11:16:00.000Z",
+  "repoRef": {
+    "name": "frontend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article Reading & Authoring (Frontend)",
+      "description": "Home feed, article view and editor read and mutate articles through the API agent.",
+      "nodeRefs": [
+        {
+          "id": "frontend-app-shell",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-home",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-article",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-editor",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-api-agent",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-redux-middleware",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-article-store",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-013",
+        "edge-014",
+        "edge-015",
+        "edge-016",
+        "edge-017",
+        "edge-018",
+        "edge-019",
+        "edge-020",
+        "edge-021",
+        "edge-022",
+        "edge-023"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

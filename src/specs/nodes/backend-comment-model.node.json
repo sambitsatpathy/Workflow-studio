@@ -1,0 +1,36 @@
+{
+  "id": "backend-comment-model",
+  "category": "data",
+  "createdAt": "2026-04-24T08:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/prisma/schema.prisma"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Comment Model",
+      "description": "Comment entity linking a body to its article and author.",
+      "properties": {
+        "entity": "Comment",
+        "store": "PostgreSQL",
+        "fields": [
+          "body",
+          "articleId",
+          "authorId"
+        ]
+      },
+      "tags": [
+        "model",
+        "comment"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

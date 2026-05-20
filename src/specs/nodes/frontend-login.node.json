@@ -1,0 +1,34 @@
+{
+  "id": "frontend-login",
+  "category": "ui",
+  "createdAt": "2026-04-23T07:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Login.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Login View",
+      "description": "Email + password sign-in form that submits credentials to the auth API.",
+      "properties": {
+        "route": "/login",
+        "forms": [
+          "login"
+        ],
+        "submits": "agent.Auth.login"
+      },
+      "tags": [
+        "auth",
+        "form"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

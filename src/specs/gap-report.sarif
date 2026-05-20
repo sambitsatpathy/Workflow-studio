@@ -1,0 +1,496 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "spec-checker",
+          "version": "1.0.0",
+          "rules": [
+            {
+              "id": "runtime-variable-value",
+              "name": "runtime-variable-value",
+              "shortDescription": {
+                "text": "runtime-variable-value"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "pending-link-unresolved",
+              "name": "pending-link-unresolved",
+              "shortDescription": {
+                "text": "pending-link-unresolved"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            },
+            {
+              "id": "workflow-refs-draft-version",
+              "name": "workflow-refs-draft-version",
+              "shortDescription": {
+                "text": "workflow-refs-draft-version"
+              },
+              "defaultConfiguration": {
+                "level": "none"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "runtime-variable-value",
+          "level": "warning",
+          "message": {
+            "text": "Property \"port\" looks like an unresolved runtime variable: process.env.PORT|3000"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/nodes/backend-express-app.node.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-001",
+            "objectLabel": "Express Application",
+            "objectType": "node",
+            "repoRef": "backend",
+            "suggestion": "Provide the actual value this resolves to in the target environment.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"GET /articles\" targets an unresolved cross-repo node (GET /articles)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-article-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-002",
+            "objectLabel": "GET /articles",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"POST /articles\" targets an unresolved cross-repo node (POST /articles)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-article-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-003",
+            "objectLabel": "POST /articles",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"GET /articles/:slug/comments\" targets an unresolved cross-repo node (GET /articles/:slug/comments)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-article-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-004",
+            "objectLabel": "GET /articles/:slug/comments",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"POST /users/login\" targets an unresolved cross-repo node (POST /users/login)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-auth-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-005",
+            "objectLabel": "POST /users/login",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"POST /users\" targets an unresolved cross-repo node (POST /users)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-auth-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-006",
+            "objectLabel": "POST /users",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"GET /user\" targets an unresolved cross-repo node (GET /user)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-auth-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-007",
+            "objectLabel": "GET /user",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"GET /profiles/:username\" targets an unresolved cross-repo node (GET /profiles/:username)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-profile-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-008",
+            "objectLabel": "GET /profiles/:username",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "pending-link-unresolved",
+          "level": "warning",
+          "message": {
+            "text": "Edge \"GET /tags\" targets an unresolved cross-repo node (GET /tags)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/edges/frontend-profile-flow.edges.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-009",
+            "objectLabel": "GET /tags",
+            "objectType": "edge",
+            "repoRef": "frontend",
+            "suggestion": "Run spec-merger with the target repo specs to resolve this cross-repo link.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 8 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/backend-article-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-010",
+            "objectLabel": "Articles & Comments API (Backend)",
+            "objectType": "workflow",
+            "repoRef": "backend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 7 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/backend-auth-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-011",
+            "objectLabel": "Authentication API (Backend)",
+            "objectType": "workflow",
+            "repoRef": "backend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 6 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/backend-profile-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-012",
+            "objectLabel": "Profiles API (Backend)",
+            "objectType": "workflow",
+            "repoRef": "backend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 5 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/backend-tag-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-013",
+            "objectLabel": "Tags API (Backend)",
+            "objectType": "workflow",
+            "repoRef": "backend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 7 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/frontend-article-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-014",
+            "objectLabel": "Article Reading & Authoring (Frontend)",
+            "objectType": "workflow",
+            "repoRef": "frontend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 8 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/frontend-auth-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-015",
+            "objectLabel": "Authentication (Frontend)",
+            "objectType": "workflow",
+            "repoRef": "frontend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        },
+        {
+          "ruleId": "workflow-refs-draft-version",
+          "level": "none",
+          "message": {
+            "text": "Version 1.0.0 references 4 node version(s) still in DRAFT."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "specs/workflows/frontend-profile-flow.workflow.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "gapId": "GAP-016",
+            "objectLabel": "Profiles (Frontend)",
+            "objectType": "workflow",
+            "repoRef": "frontend",
+            "suggestion": "No action now — workflow can be submitted once referenced nodes leave DRAFT.",
+            "autoResolvable": false,
+            "resolution": null
+          }
+        }
+      ]
+    }
+  ]
+}

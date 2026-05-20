@@ -1,0 +1,34 @@
+{
+  "id": "frontend-editor",
+  "category": "ui",
+  "createdAt": "2026-04-23T10:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Editor.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article Editor",
+      "description": "Create / edit form for an article including title, body, description and tag list.",
+      "properties": {
+        "route": "/editor/:slug",
+        "forms": [
+          "article-editor"
+        ],
+        "submits": "agent.Articles.create|update"
+      },
+      "tags": [
+        "articles",
+        "form"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

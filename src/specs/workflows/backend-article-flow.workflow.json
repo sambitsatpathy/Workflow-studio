@@ -1,0 +1,63 @@
+{
+  "id": "backend-article-flow",
+  "createdAt": "2026-04-24T14:16:00.000Z",
+  "repoRef": {
+    "name": "backend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Articles & Comments API (Backend)",
+      "description": "Express → article controller → service → Prisma for article CRUD, comments and favorites.",
+      "nodeRefs": [
+        {
+          "id": "backend-express-app",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-api-router",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-article-controller",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-auth-middleware",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-article-service",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-prisma-client",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-article-model",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-comment-model",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-035",
+        "edge-036",
+        "edge-037",
+        "edge-038",
+        "edge-039",
+        "edge-040"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

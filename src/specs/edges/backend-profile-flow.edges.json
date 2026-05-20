@@ -1,0 +1,70 @@
+{
+  "workflowId": "backend-profile-flow",
+  "edges": [
+    {
+      "id": "edge-041",
+      "source": "backend-api-router",
+      "target": "backend-profile-controller",
+      "label": "use(profileController)",
+      "description": "Router mounts the profile controller",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/routes.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-042",
+      "source": "backend-profile-controller",
+      "target": "backend-auth-middleware",
+      "label": "auth.required",
+      "description": "Follow routes apply the JWT guard",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/profile/profile.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-043",
+      "source": "backend-profile-controller",
+      "target": "backend-profile-service",
+      "label": "calls service",
+      "description": "Controller delegates to the profile service",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/profile/profile.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-044",
+      "source": "backend-profile-service",
+      "target": "backend-prisma-client",
+      "label": "prisma.user",
+      "description": "Service reads / writes the follow relation",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/profile/profile.service.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-045",
+      "source": "backend-prisma-client",
+      "target": "backend-user-model",
+      "label": "User",
+      "description": "Prisma client maps the User entity",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/prisma/schema.prisma"
+      },
+      "properties": {},
+      "pendingLink": null
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "backend-auth-controller",
+  "category": "logic",
+  "createdAt": "2026-04-23T21:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/auth/auth.controller.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Auth Controller",
+      "description": "Routes for registration, login, fetching and updating the current user.",
+      "properties": {
+        "routes": [
+          "POST /api/users",
+          "POST /api/users/login",
+          "GET /api/user",
+          "PUT /api/user"
+        ]
+      },
+      "tags": [
+        "auth",
+        "controller"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "backend-article-service",
+  "category": "logic",
+  "createdAt": "2026-04-24T00:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/article/article.service.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article Service",
+      "description": "Business logic for listing, creating, updating, deleting, commenting on and favoriting articles.",
+      "properties": {
+        "methods": [
+          "getArticles",
+          "getFeed",
+          "createArticle",
+          "updateArticle",
+          "deleteArticle",
+          "addComment",
+          "favoriteArticle"
+        ]
+      },
+      "tags": [
+        "articles",
+        "service"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "workflowId": "frontend-article-flow",
+  "edges": [
+    {
+      "id": "edge-013",
+      "source": "frontend-app-shell",
+      "target": "frontend-home",
+      "label": "route /",
+      "description": "App shell routes to the home feed",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-014",
+      "source": "frontend-app-shell",
+      "target": "frontend-article",
+      "label": "route /article/:id",
+      "description": "App shell routes to the article view",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-015",
+      "source": "frontend-app-shell",
+      "target": "frontend-editor",
+      "label": "route /editor",
+      "description": "App shell routes to the editor",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-016",
+      "source": "frontend-home",
+      "target": "frontend-api-agent",
+      "label": "agent.Articles.all",
+      "description": "Home feed loads articles via the agent",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Home/index.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-017",
+      "source": "frontend-article",
+      "target": "frontend-api-agent",
+      "label": "agent.Articles.get",
+      "description": "Article view loads an article + comments",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Article/index.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-018",
+      "source": "frontend-editor",
+      "target": "frontend-api-agent",
+      "label": "agent.Articles.create",
+      "description": "Editor submits a new / updated article",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Editor.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-019",
+      "source": "frontend-api-agent",
+      "target": "frontend-redux-middleware",
+      "label": "dispatch promise",
+      "description": "Agent promises flow through redux middleware",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-020",
+      "source": "frontend-redux-middleware",
+      "target": "frontend-article-store",
+      "label": "reduce article",
+      "description": "Middleware updates the article slice",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/middleware.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-021",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "GET /articles",
+      "description": "Cross-repo: article list endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "GET",
+        "path": "/articles",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/articles",
+        "method": "GET"
+      }
+    },
+    {
+      "id": "edge-022",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "POST /articles",
+      "description": "Cross-repo: create-article endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "POST",
+        "path": "/articles",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/articles",
+        "method": "POST"
+      }
+    },
+    {
+      "id": "edge-023",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "GET /articles/:slug/comments",
+      "description": "Cross-repo: comments endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "GET",
+        "path": "/articles/:slug/comments",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/articles/:slug/comments",
+        "method": "GET"
+      }
+    }
+  ]
+}

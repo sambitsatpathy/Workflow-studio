@@ -1,0 +1,32 @@
+{
+  "id": "backend-tag-service",
+  "category": "logic",
+  "createdAt": "2026-04-24T04:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/tag/tag.service.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Tag Service",
+      "description": "Reads the distinct tag list from the data layer.",
+      "properties": {
+        "methods": [
+          "getTags"
+        ]
+      },
+      "tags": [
+        "tags",
+        "service"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

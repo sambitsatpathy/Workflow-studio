@@ -1,0 +1,35 @@
+{
+  "id": "backend-auth-service",
+  "category": "logic",
+  "createdAt": "2026-04-23T22:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/auth/auth.service.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Auth Service",
+      "description": "Hashes passwords, signs JWTs and reads / writes the user record for auth flows.",
+      "properties": {
+        "methods": [
+          "createUser",
+          "login",
+          "getCurrentUser",
+          "updateUser"
+        ]
+      },
+      "tags": [
+        "auth",
+        "service"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

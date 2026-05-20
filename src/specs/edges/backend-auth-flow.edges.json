@@ -1,0 +1,83 @@
+{
+  "workflowId": "backend-auth-flow",
+  "edges": [
+    {
+      "id": "edge-029",
+      "source": "backend-express-app",
+      "target": "backend-api-router",
+      "label": "app.use(routes)",
+      "description": "Express mounts the API router",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/main.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-030",
+      "source": "backend-api-router",
+      "target": "backend-auth-controller",
+      "label": "use(authController)",
+      "description": "Router mounts the auth controller",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/routes.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-031",
+      "source": "backend-auth-controller",
+      "target": "backend-auth-middleware",
+      "label": "auth.required",
+      "description": "Protected auth routes apply the JWT guard",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/auth/auth.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-032",
+      "source": "backend-auth-controller",
+      "target": "backend-auth-service",
+      "label": "calls service",
+      "description": "Controller delegates to the auth service",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/auth/auth.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-033",
+      "source": "backend-auth-service",
+      "target": "backend-prisma-client",
+      "label": "prisma.user",
+      "description": "Service reads / writes via Prisma",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/auth/auth.service.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-034",
+      "source": "backend-prisma-client",
+      "target": "backend-user-model",
+      "label": "User",
+      "description": "Prisma client maps the User entity",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/prisma/schema.prisma"
+      },
+      "properties": {},
+      "pendingLink": null
+    }
+  ]
+}

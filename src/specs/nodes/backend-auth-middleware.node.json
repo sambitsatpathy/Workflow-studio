@@ -1,0 +1,35 @@
+{
+  "id": "backend-auth-middleware",
+  "category": "logic",
+  "createdAt": "2026-04-23T20:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/auth/auth.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Auth Middleware",
+      "description": "express-jwt guard exposing required / optional variants that decode the bearer token.",
+      "properties": {
+        "variants": [
+          "required",
+          "optional"
+        ],
+        "scheme": "JWT bearer"
+      },
+      "tags": [
+        "auth",
+        "middleware",
+        "jwt"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

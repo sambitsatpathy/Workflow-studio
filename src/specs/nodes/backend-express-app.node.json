@@ -1,0 +1,36 @@
+{
+  "id": "backend-express-app",
+  "category": "infra",
+  "createdAt": "2026-04-23T18:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/main.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Express Application",
+      "description": "HTTP server bootstrap: CORS, body-parser, static assets, the API router and the global error handler.",
+      "properties": {
+        "framework": "Express",
+        "port": "process.env.PORT|3000",
+        "middleware": [
+          "cors",
+          "bodyParser",
+          "errorHandler"
+        ]
+      },
+      "tags": [
+        "express",
+        "bootstrap"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

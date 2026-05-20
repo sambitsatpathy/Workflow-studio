@@ -1,0 +1,35 @@
+{
+  "id": "frontend-auth-store",
+  "category": "data",
+  "createdAt": "2026-04-23T15:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/reducers/auth.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Auth State Slice",
+      "description": "Redux slice holding login / register form state, errors and the in-flight flag.",
+      "properties": {
+        "reducer": "auth",
+        "state": [
+          "inProgress",
+          "errors"
+        ]
+      },
+      "tags": [
+        "redux",
+        "state",
+        "auth"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

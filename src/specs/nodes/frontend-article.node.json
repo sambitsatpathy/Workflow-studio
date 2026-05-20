@@ -1,0 +1,31 @@
+{
+  "id": "frontend-article",
+  "category": "ui",
+  "createdAt": "2026-04-23T09:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Article/index.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article View",
+      "description": "Reads a single article by slug and renders its body plus the comment thread.",
+      "properties": {
+        "route": "/article/:id",
+        "dataFetching": "agent.Articles.get + agent.Comments.forArticle"
+      },
+      "tags": [
+        "articles",
+        "comments"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

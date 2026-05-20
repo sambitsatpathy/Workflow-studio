@@ -1,0 +1,35 @@
+{
+  "id": "backend-tag-model",
+  "category": "data",
+  "createdAt": "2026-04-24T09:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/prisma/schema.prisma"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Tag Model",
+      "description": "Tag entity with a unique name and a many-to-many link to articles.",
+      "properties": {
+        "entity": "Tag",
+        "store": "PostgreSQL",
+        "fields": [
+          "name",
+          "articles"
+        ]
+      },
+      "tags": [
+        "model",
+        "tag"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

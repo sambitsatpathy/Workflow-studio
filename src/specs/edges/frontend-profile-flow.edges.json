@@ -1,0 +1,86 @@
+{
+  "workflowId": "frontend-profile-flow",
+  "edges": [
+    {
+      "id": "edge-024",
+      "source": "frontend-app-shell",
+      "target": "frontend-profile",
+      "label": "route /@:username",
+      "description": "App shell routes to the profile view",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-025",
+      "source": "frontend-profile",
+      "target": "frontend-api-agent",
+      "label": "agent.Profile.get",
+      "description": "Profile view loads a profile + author articles",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Profile.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-026",
+      "source": "frontend-api-agent",
+      "target": "frontend-common-store",
+      "label": "reduce session",
+      "description": "Follow state surfaces through the common slice",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-027",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "GET /profiles/:username",
+      "description": "Cross-repo: profile endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "GET",
+        "path": "/profiles/:username",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/profiles/:username",
+        "method": "GET"
+      }
+    },
+    {
+      "id": "edge-028",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "GET /tags",
+      "description": "Cross-repo: tags endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "GET",
+        "path": "/tags",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/tags",
+        "method": "GET"
+      }
+    }
+  ]
+}

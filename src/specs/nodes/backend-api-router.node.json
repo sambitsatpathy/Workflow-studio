@@ -1,0 +1,35 @@
+{
+  "id": "backend-api-router",
+  "category": "logic",
+  "createdAt": "2026-04-23T19:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/routes.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "API Router",
+      "description": "Aggregates the tag, article, profile and auth controllers under the /api prefix.",
+      "properties": {
+        "prefix": "/api",
+        "mounts": [
+          "tags",
+          "articles",
+          "profiles",
+          "auth"
+        ]
+      },
+      "tags": [
+        "router"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

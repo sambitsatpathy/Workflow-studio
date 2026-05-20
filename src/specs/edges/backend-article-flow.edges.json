@@ -1,0 +1,83 @@
+{
+  "workflowId": "backend-article-flow",
+  "edges": [
+    {
+      "id": "edge-035",
+      "source": "backend-api-router",
+      "target": "backend-article-controller",
+      "label": "use(articlesController)",
+      "description": "Router mounts the article controller",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/routes.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-036",
+      "source": "backend-article-controller",
+      "target": "backend-auth-middleware",
+      "label": "auth.optional/required",
+      "description": "Article routes apply the JWT guard",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/article/article.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-037",
+      "source": "backend-article-controller",
+      "target": "backend-article-service",
+      "label": "calls service",
+      "description": "Controller delegates to the article service",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/article/article.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-038",
+      "source": "backend-article-service",
+      "target": "backend-prisma-client",
+      "label": "prisma.article",
+      "description": "Service reads / writes via Prisma",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/article/article.service.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-039",
+      "source": "backend-prisma-client",
+      "target": "backend-article-model",
+      "label": "Article",
+      "description": "Prisma client maps the Article entity",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/prisma/schema.prisma"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-040",
+      "source": "backend-prisma-client",
+      "target": "backend-comment-model",
+      "label": "Comment",
+      "description": "Prisma client maps the Comment entity",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/prisma/schema.prisma"
+      },
+      "properties": {},
+      "pendingLink": null
+    }
+  ]
+}

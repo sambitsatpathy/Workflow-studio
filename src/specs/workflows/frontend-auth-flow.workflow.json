@@ -1,0 +1,69 @@
+{
+  "id": "frontend-auth-flow",
+  "createdAt": "2026-04-24T10:16:00.000Z",
+  "repoRef": {
+    "name": "frontend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Authentication (Frontend)",
+      "description": "Login / register / settings views drive the API agent and the auth + session Redux slices.",
+      "nodeRefs": [
+        {
+          "id": "frontend-app-shell",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-login",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-register",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-settings",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-api-agent",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-redux-middleware",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-auth-store",
+          "version": "1.0.0"
+        },
+        {
+          "id": "frontend-common-store",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-001",
+        "edge-002",
+        "edge-003",
+        "edge-004",
+        "edge-005",
+        "edge-006",
+        "edge-007",
+        "edge-008",
+        "edge-009",
+        "edge-010",
+        "edge-011",
+        "edge-012"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

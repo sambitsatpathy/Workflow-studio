@@ -1,0 +1,32 @@
+{
+  "id": "frontend-home",
+  "category": "ui",
+  "createdAt": "2026-04-23T06:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Home/index.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Home Feed",
+      "description": "Landing view showing the global / personal article feed and the popular tags sidebar.",
+      "properties": {
+        "route": "/",
+        "dataFetching": "agent.Articles.all|feed",
+        "authRequired": false
+      },
+      "tags": [
+        "feed",
+        "articles"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

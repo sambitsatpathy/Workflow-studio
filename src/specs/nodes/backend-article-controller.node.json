@@ -1,0 +1,36 @@
+{
+  "id": "backend-article-controller",
+  "category": "logic",
+  "createdAt": "2026-04-23T23:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/article/article.controller.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article Controller",
+      "description": "CRUD, feed, favorite and comment routes for articles.",
+      "properties": {
+        "routes": [
+          "GET/POST /api/articles",
+          "GET/PUT/DELETE /api/articles/:slug",
+          "GET /api/articles/feed",
+          "*/comments",
+          "*/favorite"
+        ]
+      },
+      "tags": [
+        "articles",
+        "controller"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

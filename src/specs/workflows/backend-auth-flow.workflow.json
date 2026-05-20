@@ -1,0 +1,59 @@
+{
+  "id": "backend-auth-flow",
+  "createdAt": "2026-04-24T13:16:00.000Z",
+  "repoRef": {
+    "name": "backend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Authentication API (Backend)",
+      "description": "Express → auth controller → service → Prisma for register / login / current-user.",
+      "nodeRefs": [
+        {
+          "id": "backend-express-app",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-api-router",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-auth-controller",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-auth-middleware",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-auth-service",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-prisma-client",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-user-model",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-029",
+        "edge-030",
+        "edge-031",
+        "edge-032",
+        "edge-033",
+        "edge-034"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

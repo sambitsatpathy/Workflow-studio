@@ -1,0 +1,30 @@
+{
+  "id": "frontend-profile",
+  "category": "ui",
+  "createdAt": "2026-04-23T12:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Profile.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Profile View",
+      "description": "Public profile page listing a user's articles with a follow / unfollow action.",
+      "properties": {
+        "route": "/@:username",
+        "dataFetching": "agent.Profile.get + agent.Articles.byAuthor"
+      },
+      "tags": [
+        "profile"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

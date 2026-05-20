@@ -1,0 +1,31 @@
+{
+  "id": "backend-prisma-client",
+  "category": "data",
+  "createdAt": "2026-04-24T05:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/prisma/prisma-client.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Prisma Client",
+      "description": "Singleton Prisma client providing typed access to the PostgreSQL database.",
+      "properties": {
+        "orm": "Prisma",
+        "store": "PostgreSQL"
+      },
+      "tags": [
+        "prisma",
+        "db"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

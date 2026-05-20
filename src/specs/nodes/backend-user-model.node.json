@@ -1,0 +1,38 @@
+{
+  "id": "backend-user-model",
+  "category": "data",
+  "createdAt": "2026-04-24T06:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/prisma/schema.prisma"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "User Model",
+      "description": "User entity: credentials, profile, follows, favorites and authored articles.",
+      "properties": {
+        "entity": "User",
+        "store": "PostgreSQL",
+        "fields": [
+          "email",
+          "username",
+          "password",
+          "bio",
+          "image"
+        ]
+      },
+      "tags": [
+        "model",
+        "user"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

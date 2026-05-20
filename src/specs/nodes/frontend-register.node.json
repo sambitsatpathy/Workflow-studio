@@ -1,0 +1,34 @@
+{
+  "id": "frontend-register",
+  "category": "ui",
+  "createdAt": "2026-04-23T08:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Register.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Register View",
+      "description": "New-account form capturing username, email and password.",
+      "properties": {
+        "route": "/register",
+        "forms": [
+          "register"
+        ],
+        "submits": "agent.Auth.register"
+      },
+      "tags": [
+        "auth",
+        "form"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

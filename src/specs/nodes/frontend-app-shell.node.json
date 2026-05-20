@@ -1,0 +1,41 @@
+{
+  "id": "frontend-app-shell",
+  "category": "ui",
+  "createdAt": "2026-04-23T05:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/App.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "App Shell",
+      "description": "Root component: bootstraps the session, renders the header and the react-router route table.",
+      "properties": {
+        "route": "/",
+        "renders": [
+          "Header",
+          "Home",
+          "Login",
+          "Register",
+          "Article",
+          "Editor",
+          "Settings",
+          "Profile"
+        ],
+        "bootstrap": "agent.Auth.current()"
+      },
+      "tags": [
+        "routing",
+        "shell"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

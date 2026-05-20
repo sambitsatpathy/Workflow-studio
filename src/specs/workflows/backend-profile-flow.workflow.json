@@ -1,0 +1,54 @@
+{
+  "id": "backend-profile-flow",
+  "createdAt": "2026-04-24T15:16:00.000Z",
+  "repoRef": {
+    "name": "backend"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Profiles API (Backend)",
+      "description": "Express → profile controller → service → Prisma for profile reads and follow / unfollow.",
+      "nodeRefs": [
+        {
+          "id": "backend-api-router",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-profile-controller",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-auth-middleware",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-profile-service",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-prisma-client",
+          "version": "1.0.0"
+        },
+        {
+          "id": "backend-user-model",
+          "version": "1.0.0"
+        }
+      ],
+      "edges": [
+        "edge-041",
+        "edge-042",
+        "edge-043",
+        "edge-044",
+        "edge-045"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

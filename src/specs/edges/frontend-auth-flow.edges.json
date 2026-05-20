@@ -1,0 +1,185 @@
+{
+  "workflowId": "frontend-auth-flow",
+  "edges": [
+    {
+      "id": "edge-001",
+      "source": "frontend-app-shell",
+      "target": "frontend-login",
+      "label": "route /login",
+      "description": "App shell routes to the login view",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-002",
+      "source": "frontend-app-shell",
+      "target": "frontend-register",
+      "label": "route /register",
+      "description": "App shell routes to the register view",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-003",
+      "source": "frontend-app-shell",
+      "target": "frontend-settings",
+      "label": "route /settings",
+      "description": "App shell routes to the settings view",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/App.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-004",
+      "source": "frontend-login",
+      "target": "frontend-api-agent",
+      "label": "agent.Auth.login",
+      "description": "Login form calls the API agent",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Login.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-005",
+      "source": "frontend-register",
+      "target": "frontend-api-agent",
+      "label": "agent.Auth.register",
+      "description": "Register form calls the API agent",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Register.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-006",
+      "source": "frontend-settings",
+      "target": "frontend-api-agent",
+      "label": "agent.Auth.save",
+      "description": "Settings form calls the API agent",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/components/Settings.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-007",
+      "source": "frontend-api-agent",
+      "target": "frontend-redux-middleware",
+      "label": "dispatch promise",
+      "description": "Agent promises flow through redux middleware",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-008",
+      "source": "frontend-redux-middleware",
+      "target": "frontend-auth-store",
+      "label": "reduce auth",
+      "description": "Middleware updates the auth slice",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/middleware.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-009",
+      "source": "frontend-redux-middleware",
+      "target": "frontend-common-store",
+      "label": "reduce session",
+      "description": "Middleware updates the common/session slice",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/middleware.js"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-010",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "POST /users/login",
+      "description": "Cross-repo: login endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "POST",
+        "path": "/users/login",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/users/login",
+        "method": "POST"
+      }
+    },
+    {
+      "id": "edge-011",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "POST /users",
+      "description": "Cross-repo: registration endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "POST",
+        "path": "/users",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/users",
+        "method": "POST"
+      }
+    },
+    {
+      "id": "edge-012",
+      "source": "frontend-api-agent",
+      "target": "PENDING::backend",
+      "label": "GET /user",
+      "description": "Cross-repo: current-user endpoint lives in the backend repo",
+      "repoRef": {
+        "name": "frontend",
+        "file": "src/agent.js"
+      },
+      "properties": {
+        "method": "GET",
+        "path": "/user",
+        "crossRepo": true
+      },
+      "pendingLink": {
+        "hint": "backend",
+        "routePattern": "/user",
+        "method": "GET"
+      }
+    }
+  ]
+}

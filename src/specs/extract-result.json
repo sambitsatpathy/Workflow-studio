@@ -1,0 +1,29 @@
+{
+  "tool": "spec-extractor",
+  "repo": {
+    "name": "frontend+backend",
+    "layer": "fullstack",
+    "path": "gothinkster/*-realworld-example-app"
+  },
+  "framework": "React+Redux / Express+Prisma",
+  "completedAt": "2026-04-24T17:16:00.000Z",
+  "counts": {
+    "nodes": {
+      "total": 29,
+      "ui": 8,
+      "logic": 12,
+      "data": 8,
+      "infra": 1,
+      "external": 0
+    },
+    "edges": {
+      "total": 49,
+      "resolved": 41,
+      "pending": 8
+    },
+    "workflows": 7,
+    "filesWritten": 45
+  },
+  "pendingLinks": [],
+  "warnings": []
+}

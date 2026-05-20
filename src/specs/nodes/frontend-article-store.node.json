@@ -1,0 +1,37 @@
+{
+  "id": "frontend-article-store",
+  "category": "data",
+  "createdAt": "2026-04-23T16:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/reducers/article.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article State Slice",
+      "description": "Redux slice for the active article, its comments and the paged article list.",
+      "properties": {
+        "reducer": "article+articleList",
+        "state": [
+          "article",
+          "comments",
+          "articles",
+          "articlesCount"
+        ]
+      },
+      "tags": [
+        "redux",
+        "state",
+        "articles"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

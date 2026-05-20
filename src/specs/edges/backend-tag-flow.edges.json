@@ -1,0 +1,57 @@
+{
+  "workflowId": "backend-tag-flow",
+  "edges": [
+    {
+      "id": "edge-046",
+      "source": "backend-api-router",
+      "target": "backend-tag-controller",
+      "label": "use(tagsController)",
+      "description": "Router mounts the tag controller",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/routes.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-047",
+      "source": "backend-tag-controller",
+      "target": "backend-tag-service",
+      "label": "calls service",
+      "description": "Controller delegates to the tag service",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/tag/tag.controller.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-048",
+      "source": "backend-tag-service",
+      "target": "backend-prisma-client",
+      "label": "prisma.tag",
+      "description": "Service reads tags via Prisma",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/app/routes/tag/tag.service.ts"
+      },
+      "properties": {},
+      "pendingLink": null
+    },
+    {
+      "id": "edge-049",
+      "source": "backend-prisma-client",
+      "target": "backend-tag-model",
+      "label": "Tag",
+      "description": "Prisma client maps the Tag entity",
+      "repoRef": {
+        "name": "backend",
+        "file": "src/prisma/schema.prisma"
+      },
+      "properties": {},
+      "pendingLink": null
+    }
+  ]
+}

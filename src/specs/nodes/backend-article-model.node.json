@@ -1,0 +1,38 @@
+{
+  "id": "backend-article-model",
+  "category": "data",
+  "createdAt": "2026-04-24T07:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/prisma/schema.prisma"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Article Model",
+      "description": "Article entity with slug, body, author, tag list, comments and favoritedBy.",
+      "properties": {
+        "entity": "Article",
+        "store": "PostgreSQL",
+        "fields": [
+          "slug",
+          "title",
+          "description",
+          "body",
+          "tagList"
+        ]
+      },
+      "tags": [
+        "model",
+        "article"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

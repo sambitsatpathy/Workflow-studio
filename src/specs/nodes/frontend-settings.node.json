@@ -1,0 +1,35 @@
+{
+  "id": "frontend-settings",
+  "category": "ui",
+  "createdAt": "2026-04-23T11:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/components/Settings.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Settings View",
+      "description": "Lets the current user update profile details or log out.",
+      "properties": {
+        "route": "/settings",
+        "forms": [
+          "settings"
+        ],
+        "submits": "agent.Auth.save",
+        "authRequired": true
+      },
+      "tags": [
+        "auth",
+        "profile"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

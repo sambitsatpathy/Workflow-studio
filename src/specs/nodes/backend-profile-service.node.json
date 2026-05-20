@@ -1,0 +1,34 @@
+{
+  "id": "backend-profile-service",
+  "category": "logic",
+  "createdAt": "2026-04-24T02:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/profile/profile.service.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Profile Service",
+      "description": "Resolves a profile view and maintains the follower relationship.",
+      "properties": {
+        "methods": [
+          "getProfile",
+          "followUser",
+          "unfollowUser"
+        ]
+      },
+      "tags": [
+        "profile",
+        "service"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

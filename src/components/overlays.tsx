@@ -31,7 +31,7 @@ import {
 import { CAT_COLORS, STATUS_META } from '../theme';
 import { T } from '../tokens';
 import { nodeIcon } from '../icons';
-import { DIFF_LINES, NOTIFICATIONS, PICKER_NODES } from '../data';
+import { DIFF_LINES, EXPORT_FILE_TREE, NOTIFICATIONS, PICKER_NODES } from '../data';
 import type { DetailNode, NotificationItem, QueueRow } from '../types';
 
 function Avatar({ name, size = 22 }: { name: string; size?: number }) {
@@ -1008,18 +1008,7 @@ export function ExportModal({ open, onClose }: { open: boolean; onClose: () => v
     { id: 'approved', label: 'Approved only' },
     { id: 'delta', label: 'Delta', beta: true },
   ];
-  const fileTree = `submit-order/
-├── workflow.json
-├── nodes/
-│   ├── webhook-trigger.v1.0.0.json
-│   ├── order-form.v1.1.0.json
-│   ├── validate-order.v2.0.1.json
-│   ├── payment-gateway.v1.3.0.json
-│   ├── route-request.v1.0.0.json
-│   ├── send-confirmation.v1.0.2.json
-│   └── audit-log.v1.1.1.json
-└── schemas/
-    └── logic.schema.json`;
+  const fileTree = EXPORT_FILE_TREE;
   return (
     <Dialog
       open={open}

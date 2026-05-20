@@ -1,0 +1,33 @@
+{
+  "id": "frontend-redux-middleware",
+  "category": "logic",
+  "createdAt": "2026-04-23T14:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/middleware.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Redux Promise Middleware",
+      "description": "Resolves promise-bearing actions and persists / clears the auth token in localStorage.",
+      "properties": {
+        "handles": [
+          "promise",
+          "localStorage jwt"
+        ]
+      },
+      "tags": [
+        "redux",
+        "middleware"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

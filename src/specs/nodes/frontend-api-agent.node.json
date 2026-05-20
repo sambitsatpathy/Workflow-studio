@@ -1,0 +1,38 @@
+{
+  "id": "frontend-api-agent",
+  "category": "logic",
+  "createdAt": "2026-04-23T13:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/agent.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "API Agent",
+      "description": "Superagent-based HTTP client wrapping every Conduit backend endpoint and attaching the JWT.",
+      "properties": {
+        "baseUrl": "API_ROOT",
+        "groups": [
+          "Auth",
+          "Articles",
+          "Comments",
+          "Profile",
+          "Tags"
+        ],
+        "auth": "Token header"
+      },
+      "tags": [
+        "http-client",
+        "api"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

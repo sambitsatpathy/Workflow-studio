@@ -1,0 +1,37 @@
+{
+  "id": "frontend-common-store",
+  "category": "data",
+  "createdAt": "2026-04-23T17:16:00.000Z",
+  "repoRef": {
+    "name": "frontend",
+    "file": "src/reducers/common.js"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Common State Slice",
+      "description": "Redux slice tracking app load, the current user, token and redirect target.",
+      "properties": {
+        "reducer": "common",
+        "state": [
+          "currentUser",
+          "token",
+          "appLoaded",
+          "redirectTo"
+        ]
+      },
+      "tags": [
+        "redux",
+        "state",
+        "session"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}

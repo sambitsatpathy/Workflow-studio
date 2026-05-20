@@ -1,0 +1,33 @@
+{
+  "id": "backend-profile-controller",
+  "category": "logic",
+  "createdAt": "2026-04-24T01:16:00.000Z",
+  "repoRef": {
+    "name": "backend",
+    "file": "src/app/routes/profile/profile.controller.ts"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "label": "Profile Controller",
+      "description": "Routes to read a profile and follow / unfollow a user.",
+      "properties": {
+        "routes": [
+          "GET /api/profiles/:username",
+          "POST|DELETE /api/profiles/:username/follow"
+        ]
+      },
+      "tags": [
+        "profile",
+        "controller"
+      ],
+      "lifecycle": {
+        "status": "draft",
+        "submittedBy": null,
+        "submittedAt": null,
+        "reviewedBy": null,
+        "reviewedAt": null
+      }
+    }
+  ]
+}
