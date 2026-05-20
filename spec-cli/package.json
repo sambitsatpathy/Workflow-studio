@@ -1,0 +1,31 @@
+{
+  "name": "spec-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "spec": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@inkjs/ui": "^2.0.0",
+    "@pppp606/ink-chart": "^0.2.5",
+    "@types/sarif": "^2.1.7",
+    "ink": "^7.0.3",
+    "meow": "^14.1.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
+    "typescript": "^6.0.3"
+  }
+}
